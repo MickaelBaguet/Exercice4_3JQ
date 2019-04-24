@@ -28,38 +28,38 @@
 
     $(document).ready(function(){
       // Fonction modifiant la hauteur du canvas
-      $("#modif").click(function() {
+      $('#modif').click(function() {
         // On récupère la hauteur du canvas
-        var hauteur = +$("#myCanvas").attr("height");
+        var hauteur = +$('#myCanvas').attr('height');
         // console.log(hauteur);
         // Si inférieur à 100
         if (hauteur < 100) {
           // console.log("Moins de 100");
           // On modifie l'attribut hauteur
-          $("#myCanvas").attr("height", hauteur+10);
+          $('#myCanvas').attr('height', hauteur+10);
           // console.log($("#myCanvas").attr("height"));
           // Sinon c'est plus grand
         } else {
           // console.log("Plus de 100");
           // Et on réinitialise la hauteur du canvas
-          $("#myCanvas").attr("height", "10");
+          $('#myCanvas').attr('height', '10');
         }
       })
       // Modif du background color
-      $("#vert").click(function() {
-        $("#myCanvas").css("background-color", "green");
+      $('#vert').click(function() {
+        $('#myCanvas').css('background-color', 'green');
       })
       // Réinitialisation du background color
-      $("#razColor").click(function() {
-        $("#myCanvas").css("background-color", "");
+      $('#razColor').click(function() {
+        $('#myCanvas').css('background-color', '');
       })
       // Cache le canvas
-      $("#hide").click(function() {
-        $("#myCanvas").hide();
+      $('#hide').click(function() {
+        $('#myCanvas').hide();
       })
       // Fait apparaitre le canvas
-      $("#show").click(function() {
-        $("#myCanvas").show()
+      $('#show').click(function() {
+        $('#myCanvas').show()
       })
     });
   </script>
